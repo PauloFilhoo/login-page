@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+    <style>
+        .container {
+            background-color: var(--background);
+            border: 2px solid rgb(0, 0, 0);
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.212);
+            width: 400px;
+            height: 550px;
+            border-radius: 10px;
+            padding: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <form id="login-form">
+
+            <h1>Criar conta</h1>
+
+            <div class="login-group">
+                <label for="username">Email</label>
+                <br>
+                <input type="text" id="username" placeholder="Digite seu email" required>
+            </div>
+
+            <div class="login-group">
+                <label for="password">Senha</label>
+                <br>
+                <input type="password" id="password" placeholder="Digite sua senha" required>
+            </div>
+            
+            <div class="login-group">
+                <label for="password">Confirme a senha</label>
+                <br>
+                <input type="password" id="password" placeholder="Digite sua senha" required>
+            </div>
+            <div class="group">
+                <div class="remember-group">
+                    <input type="checkbox" name="Remember" id="remember">
+                    <label for="Remeber-me">Lembrar-se</label>
+                </div>
+                <div class="forgot-group">
+                    <label for="Forgot" ><a href="#">Esqueceu a senha?</a></label>
+                </div>
+            </div>
+        
+
+            <button type="submit" id="submit">Entrar</button>
+
+            <div class="group">
+                <label for="Register"><a href="login.html">Já tem uma conta? Logar</a></label>
+            </div>
+        </form>
+        <div class="message"></div>
+    </div>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
